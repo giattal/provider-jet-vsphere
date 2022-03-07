@@ -23,7 +23,7 @@ import (
 	tjconfig "github.com/crossplane/terrajet/pkg/config"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
-	"github.com/giattal/provider-jet-vsphere/config/datasources"
+	"github.com/giattal/provider-jet-vsphere/tree/main/config/datasources"
 )
 
 const (

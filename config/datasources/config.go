@@ -3,7 +3,7 @@ package datasources
 import (
 	"github.com/crossplane/terrajet/pkg/config"
 
-	"github.com/giattal/provider-jet-vsphere/config/common"
+	"github.com/giattal/provider-jet-vsphere/tree/main/config/common"
 )
 
 // Configure configures individual resources by adding custom ResourceConfigurators.
