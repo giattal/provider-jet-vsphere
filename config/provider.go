@@ -47,7 +47,7 @@ func GetProvider() *tjconfig.Provider {
 	pc := tjconfig.NewProviderWithSchema([]byte(providerSchema), resourcePrefix, modulePath,
 		tjconfig.WithDefaultResourceFn(defaultResourceFn),
 		tjconfig.WithIncludeList([]string{
-			"vsphere_virtual$",
+			"vsphere_virtual_disk$",
 			"vsphere_host$",
 		}))
 	for _, configure := range []func(provider *tjconfig.Provider){
