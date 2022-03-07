@@ -23,13 +23,12 @@ import (
 	tjconfig "github.com/crossplane/terrajet/pkg/config"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
-	"github.com/giattal/provider-jet-vsphere/blob/main/config/host"
-	"github.com/giattal/provider-jet-vsphere/blob/main/config/virtual"
+	"github.com/giattal/provider-jet-vsphere/config/datasources"
 )
 
 const (
 	resourcePrefix = "vsphere"
-	modulePath     = "github.com/crossplane-contrib/provider-jet-vsphere"
+	modulePath     = "github.com/giattal/provider-jet-vsphere"
 )
 
 //go:embed schema.json
@@ -47,13 +46,12 @@ func GetProvider() *tjconfig.Provider {
 	pc := tjconfig.NewProviderWithSchema([]byte(providerSchema), resourcePrefix, modulePath,
 		tjconfig.WithDefaultResourceFn(defaultResourceFn),
 		tjconfig.WithIncludeList([]string{
-			"vsphere_virtual_disk$",
+			//datasources
 			"vsphere_host$",
 		}))
 	for _, configure := range []func(provider *tjconfig.Provider){
 		// add custom config functions
-		virtual.Configure,
-		host.Configure,
+		datasources.Configure,
 	} {
 		configure(pc)
 	}
