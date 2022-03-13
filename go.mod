@@ -1,4 +1,4 @@
-module github.com/crossplane-contrib/provider-jet-vsphere
+module github.com/giattal/provider-jet-vsphere
 
 go 1.17
 
