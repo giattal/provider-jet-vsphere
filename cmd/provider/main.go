@@ -33,10 +33,10 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/crossplane-contrib/provider-jet-vsphere/apis"
-	"github.com/crossplane-contrib/provider-jet-vsphere/config"
-	"github.com/crossplane-contrib/provider-jet-vsphere/internal/clients"
-	"github.com/crossplane-contrib/provider-jet-vsphere/internal/controller"
+	"github.com/giattal/provider-jet-vsphere/apis"
+	"github.com/giattal/provider-jet-vsphere/config"
+	"github.com/giattal/provider-jet-vsphere/internal/clients"
+	"github.com/giattal/provider-jet-vsphere/internal/controller"
 )
 
 func main() {

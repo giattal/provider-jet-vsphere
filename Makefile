@@ -2,7 +2,7 @@
 # Setup Project
 
 PROJECT_NAME := provider-jet-vsphere
-PROJECT_REPO := github.com/crossplane-contrib/$(PROJECT_NAME)
+PROJECT_REPO := github.com/giattal/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION := 1.1.7
 

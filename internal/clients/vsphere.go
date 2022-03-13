@@ -27,7 +27,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/crossplane-contrib/provider-jet-vsphere/apis/v1alpha1"
+	"github.com/giattal/provider-jet-vsphere/apis/v1alpha1"
 )
 
 const (

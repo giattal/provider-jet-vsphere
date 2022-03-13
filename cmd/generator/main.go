@@ -25,7 +25,7 @@ import (
 
 	"github.com/crossplane/terrajet/pkg/pipeline"
 
-	"github.com/crossplane-contrib/provider-jet-vsphere/config"
+	"github.com/giattal/provider-jet-vsphere/config"
 )
 
 func main() {
